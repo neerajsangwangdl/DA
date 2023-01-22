@@ -1,0 +1,8 @@
+Array_Insert 
+
+1 Understand issue and solution with Whiteboard.
+2 Make arrya, define the position.
+3 Use Loop to insert new element.
+4 Insert element with text input and button.
+5 Insert Element with by default function.
+

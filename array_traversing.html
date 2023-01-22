@@ -1,37 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array Traversing</title>
+    <title>Document</title>
     <script>
-        let data = [9, 45, 2, 8, 45, 23, 7, 78, 0, 11, 41, 77]
-        // for(let i = 0;i < data.length; i++){
-        //     document.write(`Array ${i} is ${data[i]}<br>`)
-        // }
-        // let x = 10;
-        // document.write(data[10])
-
-        function getElement() {
-
-            let el = document.getElementById('element').value
-            if (el < data.length && typeof parseInt(el) === "number") {
-
+        let data = [10,34,65,89,12,32,62,55,22,81];
+        for(let i = 0; i < data.length; i++){
+            document.write(`Array  ${i} is ${data[i]} <br>`);
+        }
+        function getElement(){
+            let el = document.getElementById('element').value;
+            if(el<data.length && typeof parseInt('el')==='number'){
                 alert(data[el])
             }else{
-                alert("Please enter valid input")
+                alert("please enter valid value")
             }
-
         }
     </script>
-
 </head>
-
 <body>
-    <input type="text" id="element" />
-    <button onclick="getElement()">Get Element</button>
+    <input type="text" id="element"/>
+    <button onclick="getElement()">Click</button>
 </body>
-
 </html>
