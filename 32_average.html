@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //    Average in a stream.
+        // https://www.w3schools.com/jsref/jsref_tofixed.asp
+        let arr = [10, 20, 30, 40, 50, 60];
+        let n = arr.length;
+
+        function findAverage(arr, n) {
+            let value = 0;
+            let result = 0;
+            for (let i = 0; i < n; i++) {
+                const element = arr[i];
+                console.log(element)
+                value += element;
+                console.log(value);
+                result = value / (i + 1);
+                console.log("The average is: " + result.toFixed(2));
+
+            }
+        }
+        findAverage(arr, n)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

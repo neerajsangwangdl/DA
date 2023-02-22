@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Bitonic Point.
+
+function bitonicPoint(arr, n) {
+    let bp = 0;
+    
+    for (let i = 0; i < n-1; i++) {
+        if (arr[i]<arr[i+1] && bp<arr[i+1]) {
+            bp=arr[i+1];
+            
+        } else if(arr[i]>arr[i+1] && bp<arr[i]) {
+            bp=arr[i];  
+        } 
+    }
+    return (bp);
+}
+
+let arr = [9, 12, 25, 38, 86, 44, 42, 66];
+let n = arr.length;
+
+let bitonic = bitonicPoint(arr, n);
+console.log(bitonic);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

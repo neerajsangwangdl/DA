@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    //Array subset of another array
+    // https://www.w3schools.com/jsref/jsref_indexof_array.asp
+
+    function isSubset(arr1, arr2, n, m) {
+
+        for (let i = 0; i < m; i++) {
+            let index = arr1.indexOf(arr2[i]);
+            if (index == -1) {
+                return "No";
+            }
+        }
+        return "Yes";
+    }
+
+    let arr1 = [11, 1, 13, 21, 3, 7];
+    let arr2 = [11, 3, 7, 1];
+    let n = arr1.length;
+    let m = arr2.length;
+
+    let subset = isSubset(arr1, arr2, n, m);
+    console.log(subset);
+</script>
+
+<body>
+
+</body>
+
+</html>
